@@ -1,0 +1,15 @@
+<li id="<%= "career_" + career.id.to_s %>">
+  <strong><%= career.name %></strong>
+  <span><%= career.level %></span>
+  <ul>
+    <li><strong>Base Attack Bonus</strong> <span><%= attack_bonus(career.base_attack_bonus) %></span></li>
+    <li><strong>Hit Die</strong> <span>d<%= career.hit_die %></span></li>
+    <li><strong>Skills Per Level</strong> <span><%= career.skills_per_level %> + int mod</span></li>
+    <li><strong>Reflex Save</strong> <span>+<%= career.base_save_reflex %></span></li>
+    <li><strong>Will Save</strong> <span>+<%= career.base_save_will %></span></li>
+    <li><strong>Fortitude Save</strong> <span>+<%= career.base_save_fortitude %></span></li>
+    <% if params[:action] == 'edit' %>
+    <li class="edit"><%= link_to "edit", edit_character_career_path(@character, career) %> <%= link_to "delete", [@character, career], :method => :delete %></li>
+    <% end %>
+  </ul>
+</li>

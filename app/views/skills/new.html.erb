@@ -1,0 +1,28 @@
+<h1>New skill</h1>
+
+<%= error_messages_for :skill %>
+
+<% form_for([@character, @skill]) do |f| %>
+  <%= f.hidden_field :character_id, :default => @character.id %>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Rank</b><br />
+    <%= f.text_field :rank %>
+  </p>
+
+  <p>
+    <b>Base stat</b><br />
+    <%= f.text_field :base_stat %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', character_skills_path %>

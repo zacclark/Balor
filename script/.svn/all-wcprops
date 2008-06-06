@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/balor/!svn/ver/2/branches/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/balor/!svn/ver/2/branches/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/balor/!svn/ver/2/branches/script/server
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/balor/!svn/ver/2/branches/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/balor/!svn/ver/2/branches/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/balor/!svn/ver/2/branches/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/balor/!svn/ver/2/branches/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/balor/!svn/ver/2/branches/script/plugin
+END

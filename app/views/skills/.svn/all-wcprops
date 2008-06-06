@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/balor/!svn/ver/2/branches/app/views/skills
+END
+_newembed.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/balor/!svn/ver/2/branches/app/views/skills/_newembed.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/app/views/skills/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/balor/!svn/ver/2/branches/app/views/skills/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/balor/!svn/ver/2/branches/app/views/skills/new.html.erb
+END
+_skill.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/balor/!svn/ver/2/branches/app/views/skills/_skill.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/app/views/skills/show.html.erb
+END

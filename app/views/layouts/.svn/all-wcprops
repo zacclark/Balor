@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/balor/!svn/ver/2/branches/app/views/layouts
+END
+careers-off.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/balor/!svn/ver/2/branches/app/views/layouts/careers-off.html.erb
+END
+items.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/balor/!svn/ver/2/branches/app/views/layouts/items.html.erb
+END
+skills.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/balor/!svn/ver/2/branches/app/views/layouts/skills.html.erb
+END
+feats.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/balor/!svn/ver/2/branches/app/views/layouts/feats.html.erb
+END
+spells.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/balor/!svn/ver/2/branches/app/views/layouts/spells.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/balor/!svn/ver/3/branches/app/views/layouts/application.html.erb
+END

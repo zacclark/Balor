@@ -1,0 +1,37 @@
+<h1>Editing item</h1>
+
+<%= error_messages_for :item %>
+
+<% form_for(@item) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Quantity</b><br />
+    <%= f.text_field :quantity %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Weight</b><br />
+    <%= f.text_field :weight %>
+  </p>
+
+  <p>
+    <b>Character</b><br />
+    <%= f.text_field :character %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @item %> |
+<%= link_to 'Back', items_path %>

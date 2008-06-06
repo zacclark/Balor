@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/balor/!svn/ver/2/branches/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/balor/!svn/ver/2/branches/log/test.log
+END
+development.log
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/balor/!svn/ver/4/branches/log/development.log
+END
+production.log
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/balor/!svn/ver/2/branches/log/production.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/balor/!svn/ver/2/branches/log/server.log
+END

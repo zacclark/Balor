@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/balor/!svn/ver/2/branches/test/unit
+END
+item_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/balor/!svn/ver/2/branches/test/unit/item_test.rb
+END
+skill_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/test/unit/skill_test.rb
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/balor/!svn/ver/2/branches/test/unit/user_test.rb
+END
+feat_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/balor/!svn/ver/2/branches/test/unit/feat_test.rb
+END
+spell_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/test/unit/spell_test.rb
+END
+career_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/balor/!svn/ver/2/branches/test/unit/career_test.rb
+END
+stat_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/balor/!svn/ver/2/branches/test/unit/stat_test.rb
+END
+character_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/balor/!svn/ver/2/branches/test/unit/character_test.rb
+END

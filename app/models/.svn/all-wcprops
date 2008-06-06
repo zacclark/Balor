@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/balor/!svn/ver/2/branches/app/models
+END
+item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/balor/!svn/ver/2/branches/app/models/item.rb
+END
+skill.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/balor/!svn/ver/2/branches/app/models/skill.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/balor/!svn/ver/2/branches/app/models/user.rb
+END
+feat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/balor/!svn/ver/2/branches/app/models/feat.rb
+END
+spell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/balor/!svn/ver/2/branches/app/models/spell.rb
+END
+career.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/balor/!svn/ver/2/branches/app/models/career.rb
+END
+character.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/app/models/character.rb
+END

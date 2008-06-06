@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/balor/!svn/ver/2/branches/app/views/careers
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/balor/!svn/ver/2/branches/app/views/careers/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/balor/!svn/ver/2/branches/app/views/careers/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/app/views/careers/new.html.erb
+END
+_career.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/balor/!svn/ver/2/branches/app/views/careers/_career.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/balor/!svn/ver/2/branches/app/views/careers/show.html.erb
+END

@@ -1,0 +1,57 @@
+<h1>Editing career</h1>
+
+<%= error_messages_for :career %>
+
+<% form_for([@character, @career]) do |f| %>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Level</b><br />
+    <%= f.text_field :level %>
+  </p>
+  
+  <p>
+    <b>Base Attack Bonus</b><br />
+    <%= f.text_field :base_attack_bonus %>
+  </p>
+
+  <p>
+    <b>Hit die</b><br />
+    <%= f.select(:hit_die, [
+		                              ['d4', '4'],
+		                              ['d6', '6'],
+		                              ['d8', '8'],
+		                              ['d10', '10'],
+		                              ['d12', '12'],
+		                              ['d20', '20']], {:selected => "#{@career.hit_die}"})%>
+  </p>
+
+  <p>
+    <b>Skills per level</b><br />
+    <%= f.text_field :skills_per_level %>
+  </p>
+
+  <p>
+    <b>Base save reflex</b><br />
+    <%= f.text_field :base_save_reflex %>
+  </p>
+
+  <p>
+    <b>Base save will</b><br />
+    <%= f.text_field :base_save_will %>
+  </p>
+
+  <p>
+    <b>Base save fortitude</b><br />
+    <%= f.text_field :base_save_fortitude %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+<%= link_to 'Back', character_path(@character) %>

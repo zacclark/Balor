@@ -1,0 +1,177 @@
+<h1><%= @character.name %></h1>
+
+<div class="module" id="general">
+	<h2>General</h2>
+	<ul>
+		<% form_for @character do |f| %>
+		  <%= error_messages_for :character %>
+		  <li><strong>Hit Points</strong> <span><%= f.text_field :hit_points, :value => @character.hit_points %></span></li>
+  		<li><strong>Race</strong> <span><%= f.text_field :race, :value => @character.race %></span></li>
+  		<li><strong>Alignment</strong> <span><%= f.text_field :alignment, :value => @character.alignment %></span></li>
+  		<li><strong>Armor Bonus</strong> <span><%= f.text_field :armor_bonus, :value => @character.armor_bonus %></span></li>
+  		<li><strong>Deflection Bonus</strong> <span><%= f.text_field :deflection_bonus, :value => @character.deflection_bonus %></span></li>
+  		<li><strong>Natural Armor</strong> <span><%= f.text_field :natural_armor, :value => @character.natural_armor %></span></li>
+  		<li><strong>Spellcaster?</strong> <span><%= f.check_box :spellcaster %></span></li>
+  		<div class="submit"><%= image_submit_tag("/images/submit.png", :class => 'submit') %></div>
+		<% end %>
+	</ul>
+</div>
+
+<div class="module" id="stats">
+	<h2>Stats</h2>
+	<% form_for @character do |f| %>
+	<%= error_messages_for :character %>
+	<table>
+			<tr><th>str</th><td><%= f.text_field :stats_str, :value => @character.stats_str %></td><td><%= stats_mod(@character.stats_str) %></td></tr>
+			<tr><th>dex</th><td><%= f.text_field :stats_dex, :value => @character.stats_dex %></td><td><%= stats_mod(@character.stats_dex) %></td></tr>
+			<tr><th>con</th><td><%= f.text_field :stats_con, :value => @character.stats_con %></td><td><%= stats_mod(@character.stats_con) %></td></tr>
+			<tr><th>int</th><td><%= f.text_field :stats_int, :value => @character.stats_int %></td><td><%= stats_mod(@character.stats_int) %></td></tr>
+			<tr><th>wis</th><td><%= f.text_field :stats_wis, :value => @character.stats_wis %></td><td><%= stats_mod(@character.stats_wis) %></td></tr>
+			<tr><th>cha</th><td><%= f.text_field :stats_cha, :value => @character.stats_cha %></td><td><%= stats_mod(@character.stats_cha) %></td></tr>
+	</table>
+	<div class="submit"><%= image_submit_tag("/images/submit.png", :class => 'submit') %></div>
+	<% end %>
+</div>
+
+<hr />
+
+<div class="module" id="careers">
+  <h2>Classes <%= link_to '(new)', new_character_career_path(@character) %></h2>
+  <ul id="career_list">
+    <%= render :partial => 'careers/career', :collection => @character.careers %>
+  </ul>
+</div>
+
+<div class="module" id="skills">
+	<h2>Skills <%= @character.surplus_skill_points %></h2>
+	<ul id="rawr">
+	  <%= render :partial => 'skills/skill', :collection => @character.skills %>
+	</ul>
+	<%= render :partial => 'skills/newembed' %>
+</div>
+
+<hr />
+
+<div class="module" id="feats">
+	<h2>Feats</h2>
+	<ul id="feat_list">
+	  <%= render :partial => 'feats/feat', :collection => @character.feats %>
+	</ul>
+	<% form_for([@character, @character.feats.build]) do |f| %>
+	<%= error_messages_for :feat %>
+	<%= f.hidden_field :character_id, :value => @character.id %>
+		<table>
+			<tr>
+				<th><label for="feat_name">Name</label></th>
+				<th><label for="feat_effects">Description</label></th>
+			</tr>
+			<tr>
+				<td><%= f.text_field :name %></td>
+				<td><%= f.text_field :description %></td>
+			</tr>
+		</table>
+		<div class="submit"><%= image_submit_tag("/images/submit.png", :class => 'submit') %></div>
+	<% end %>
+</div>
+
+<div class="module" id="items">
+  <h2>Items</h2>
+  <ul id="item_list">
+    <%= render :partial => 'items/item', :collection => @character.items %>
+  </ul>
+  <% form_for([@character, @character.items.build]) do |f| %>
+    <table>
+      <tr>
+        <th><label for="item_name">Name</label></th>
+        <th><label for="item_weight">Weight</label></th>
+      </tr>
+      <tr>
+        <td><%= f.text_field :name %></td>
+        <td><%= f.text_field :weight %></td>
+      </tr>
+      <tr>
+        <th><label for="item_description">Description</label></th>
+      </tr>
+      <tr>
+        <td colspan="2"><%= f.text_area :description, :cols => 42, :rows => 5 %></td>
+      </tr>
+    </table>
+    <div class="submit"><%= image_submit_tag("/images/submit.png", :class => 'submit') %></div>
+  <% end %>
+</div>
+
+<hr />
+
+<% if @character.spellcaster %>
+<div class="module" id="spells">
+  <h2>Spells</h2>
+  
+  <ul>
+    <li class="title">0th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(0) %>
+  </ul>
+  
+  <ul>
+    <li class="title">1st</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(1) %>
+  </ul>
+  
+  <ul>
+    <li class="title">2nd</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(2) %>
+  </ul>
+  
+  <ul>
+    <li class="title">3rd</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(3) %>
+  </ul>
+  
+  <hr />
+  
+  <ul>
+    <li class="title">4th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(4) %>
+  </ul>
+  
+  <ul>
+    <li class="title">5th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(5) %>
+  </ul>
+  
+  <ul>
+    <li class="title">6th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(6) %>
+  </ul>
+  
+  <ul>
+    <li class="title">7th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(7) %>
+  </ul>
+  
+  <hr />
+  
+  <ul>
+    <li class="title">8th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(8) %>
+  </ul>
+  
+  <ul>
+    <li class="title">9th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(9) %>
+  </ul>
+  
+  <% form_for([@character, @character.spells.build]) do |f| %>
+  <table>
+    <tr>
+      <th><label for="spell_name">Name</label></th>
+      <th><label for="spell_level">Level</label></th>
+    </tr>
+    <tr>
+      <td><%= f.text_field :name %></td>
+      <td><%= f.select :level, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] %></td>
+    </tr>
+  </table>
+  <div class="submit"><%= image_submit_tag("/images/submit.png", :class => 'submit') %></div>
+  <% end %>
+</div>
+<% end %>

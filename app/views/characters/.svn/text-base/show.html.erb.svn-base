@@ -1,0 +1,124 @@
+<h1><%= @character.name %></h1>
+
+<div class="module" id="general">
+	<h2>General</h2>
+	<ul>
+		<li><strong>Hit Points</strong> <span><%= h(@character.hit_points) %></span></li>
+		<li><strong>Race</strong> <span><%= @character.race %></span></li>
+		<li><strong>Alignment</strong> <span><%= @character.alignment %></span></li>
+		<li><strong>Melee Attack Bonus</strong> <span><%= attack_bonus(@character.attack_bonus, stats_mod(@character.stats_str)) %></span></li>
+		<li><strong>Ranged Attack Bonus</strong> <span><%= attack_bonus(@character.attack_bonus, stats_mod(@character.stats_dex)) %></span></li>
+		<li><strong>Armor Class</strong> <span><%= @character.ac %></span></li>
+		<li><strong>Armor Class (Touch)</strong> <span><%= @character.touch_ac %></span></li>
+		<li><strong>Armor Class (Flat Footed)</strong> <span><%= @character.flat_footed_ac %></span></li>
+		<li><strong>Reflex Save</strong> <span><%= @character.reflex_save %></span></li>
+		<li><strong>Will Save</strong> <span><%= @character.will_save %></span></li>
+		<li><strong>Fortitude Save</strong> <span><%= @character.fortitude_save %></span></li>
+	</ul>
+</div>
+
+<div class="module" id="stats">
+	<h2>Stats</h2>
+	<table>
+			<tr><th>str</th><td><%= @character.stats_str %></td><td><%= stats_mod(@character.stats_str) %></td></tr>
+			<tr><th>dex</th><td><%= @character.stats_dex %></td><td><%= stats_mod(@character.stats_dex) %></td></tr>
+			<tr><th>con</th><td><%= @character.stats_con %></td><td><%= stats_mod(@character.stats_con) %></td></tr>
+			<tr><th>int</th><td><%= @character.stats_int %></td><td><%= stats_mod(@character.stats_int) %></td></tr>
+			<tr><th>wis</th><td><%= @character.stats_wis %></td><td><%= stats_mod(@character.stats_wis) %></td></tr>
+			<tr><th>cha</th><td><%= @character.stats_cha %></td><td><%= stats_mod(@character.stats_cha) %></td></tr>
+	</table>
+</div>
+
+<hr />
+
+<div class="module" id="careers">
+  <h2>Classes</h2>
+  <ul id="career_list">
+    <%= render :partial => 'careers/career', :collection => @character.careers %>
+  </ul>
+</div>
+
+<div class="module" id="skills">
+	<h2>Skills</h2>
+	<ul id="rawr">
+	  <%= render :partial => 'skills/skill', :collection => @character.skills %>
+	</ul>
+</div>
+
+<hr />
+
+<div class="module" id="feats">
+	<h2>Feats</h2>
+	<ul id="feat_list">
+	  <%= render :partial => 'feats/feat', :collection => @character.feats %>
+	</ul>
+</div>
+
+<div class="module" id="items">
+  <h2>Items</h2>
+  <ul id="item_list">
+    <%= render :partial => 'items/item', :collection => @character.items %>
+  </ul>
+</div>
+
+<hr />
+
+<% if @character.spellcaster %>
+<div class="module" id="spells">
+  <h2>Spells</h2>
+  
+  <ul>
+    <li class="title">0th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(0) %>
+  </ul>
+  
+  <ul>
+    <li class="title">1st</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(1) %>
+  </ul>
+  
+  <ul>
+    <li class="title">2nd</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(2) %>
+  </ul>
+  
+  <ul>
+    <li class="title">3rd</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(3) %>
+  </ul>
+  
+  <hr />
+  
+  <ul>
+    <li class="title">4th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(4) %>
+  </ul>
+  
+  <ul>
+    <li class="title">5th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(5) %>
+  </ul>
+  
+  <ul>
+    <li class="title">6th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(6) %>
+  </ul>
+  
+  <ul>
+    <li class="title">7th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(7) %>
+  </ul>
+  
+  <hr />
+  
+  <ul>
+    <li class="title">8th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(8) %>
+  </ul>
+  
+  <ul>
+    <li class="title">9th</li>
+    <%= render :partial => 'spells/spell', :collection => @character.level_spells(9) %>
+  </ul>
+</div>
+<% end %>

@@ -1,0 +1,23 @@
+<% form_remote_for([@character, @character.skills.build]) do |f| %>
+<%= error_messages_for :skill %>
+<%= f.hidden_field :character_id, :value => @character.id %>
+	<table>
+		<tr>
+			<th><label for="skill_name">Name</label></th>
+			<th>Ranks</th>
+			<th>Stat Mod</th>
+		</tr>
+		<tr>
+			<td><%= f.text_field :name %></td>
+			<td><%= f.text_field :rank %></td>
+			<td><%= f.select(:base_stat, [
+			                              ['Strength', 'str'],
+			                              ['Dexterity', 'dex'],
+			                              ['Constitution', 'con'],
+			                              ['Intelligence', 'int'],
+			                              ['Wisdom', 'wis'],
+			                              ['Charisma', 'cha']])%></td>
+		</tr>
+	</table>
+	<div class="submit"><%= image_submit_tag("/images/submit.png", :class => 'submit') %></div>
+<% end %>

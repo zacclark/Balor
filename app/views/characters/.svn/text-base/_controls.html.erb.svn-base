@@ -1,0 +1,4 @@
+<ul id="control">
+  <li<% if params[:action] == 'show' %> class="active"<% end %>><%= link_to "view", character_path(@character) %></li>
+  <li<% if params[:action] == 'edit' %> class="active"<% end %>><%= link_to "edit", edit_character_path(@character) %></li>
+</ul>

@@ -1,0 +1,6 @@
+<li>
+  <%= spell.name %>
+  <% if params[:action] == 'edit' %>
+    (<%= link_to "x", [@character, spell], :method => :delete %>)
+  <% end %>
+</li>

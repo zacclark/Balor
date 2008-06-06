@@ -1,0 +1,23 @@
+<p>
+  <b>Character:</b>
+  <%=h @skill.character.name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @skill.name %>
+</p>
+
+<p>
+  <b>Rank:</b>
+  <%=h @skill.rank %>
+</p>
+
+<p>
+  <b>Base stat:</b>
+  <%=h @skill.base_stat %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_skill_path(@character) %> |
+<%= link_to 'Back', character_skills_path %>

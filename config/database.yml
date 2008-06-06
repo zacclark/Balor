@@ -1,0 +1,18 @@
+defaults: &defaults
+  adapter: mysql
+  encoding: utf8
+  username: railsadmin
+  password: mjolnir
+  socket: /tmp/mysql.sock
+
+development:
+  database: balor2_dev
+  <<: *defaults
+
+test:
+  database: balor2_test
+  <<: *defaults
+
+production:
+  database: balor2_production
+  <<: *defaults

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/balor/!svn/ver/2/branches/db/migrate
+END
+007_add_baseattack.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/balor/!svn/ver/2/branches/db/migrate/007_add_baseattack.rb
+END
+001_create_characters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/balor/!svn/ver/2/branches/db/migrate/001_create_characters.rb
+END
+002_create_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/db/migrate/002_create_stats.rb
+END
+010_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/db/migrate/010_create_users.rb
+END
+011_users_own_characters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/balor/!svn/ver/2/branches/db/migrate/011_users_own_characters.rb
+END
+004_create_skills.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/balor/!svn/ver/2/branches/db/migrate/004_create_skills.rb
+END
+009_select_spellcaster.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/balor/!svn/ver/2/branches/db/migrate/009_select_spellcaster.rb
+END
+003_create_careers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/balor/!svn/ver/2/branches/db/migrate/003_create_careers.rb
+END
+005_create_feats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/db/migrate/005_create_feats.rb
+END
+006_create_items.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/db/migrate/006_create_items.rb
+END
+008_create_spells.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/balor/!svn/ver/2/branches/db/migrate/008_create_spells.rb
+END

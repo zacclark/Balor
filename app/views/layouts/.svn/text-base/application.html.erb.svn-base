@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Balor</title>
+    <%= stylesheet_link_tag 'core', :media => 'all' %>
+    <%= stylesheet_link_tag 'print', :media => 'print' %>
+    <% if request.user_agent.include?("iPhone") %>
+      <%= stylesheet_link_tag 'iphone', :media => 'all' %>
+    <% end %>
+    
+    <%= javascript_include_tag :defaults %>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+  </head>
+  <body id="balor">
+  
+  <div id="nonFooter">  
+	<div id="header">
+	  <div class="hold">
+		  <h1><a href="/">Balor</a></h1>
+		  <%= "<p id=\"notice\">#{flash[:notice]}</p>" if flash[:notice] %>
+		  <%= render :partial => 'characters/controls' unless params[:action] == 'index' || params[:controller] != 'characters' %>
+		</div>
+	</div>
+	
+  <div id="content">
+      <div id="dragon"></div>
+  		<%= yield %>
+  		<hr class="fix" />
+  </div>
+  </div>
+  
+  <div id="footer">
+    <div class="hold"><div id="dragon2"></div>
+      <% if logged_in? %>
+        Logged in as <%= current_user.login %>. <%= link_to '(logout)', logout_path %><br />
+      <% end %>
+      <%= link_to 'Learn more about Balor', :controller => 'pages', :action => 'about' %>
+    </div>
+  </div>
+  
+  </body>
+</html>

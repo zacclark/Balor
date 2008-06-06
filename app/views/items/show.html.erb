@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @item.name %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%=h @item.quantity %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @item.weight %>
+</p>
+
+<p>
+  <b>Character:</b>
+  <%=h @item.character %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

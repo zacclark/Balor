@@ -1,0 +1,7 @@
+<li id="<%= "feat_" + feat.id.to_s %>">
+    <strong><%= h(feat.name) %></strong>
+    <% if params[:action] == 'edit' %>
+      <span class="destroy"><%= link_to "X", [@character, feat], :method => :delete %></span>
+    <% end %>
+    <span><%= h(feat.description) %></span>
+</li>

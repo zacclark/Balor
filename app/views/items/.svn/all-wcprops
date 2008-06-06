@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/balor/!svn/ver/2/branches/app/views/items
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/balor/!svn/ver/2/branches/app/views/items/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/app/views/items/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/balor/!svn/ver/2/branches/app/views/items/new.html.erb
+END
+_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/app/views/items/_item.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/balor/!svn/ver/2/branches/app/views/items/show.html.erb
+END

@@ -1,0 +1,150 @@
+/* Main Styles (good) */
+
+*                             {margin: 0; padding: 0;}
+body                          {border-top: 6px solid #333; font-family: "Gill Sans", "Arial", sans-serif; font-size: 14px; color: #444;}
+#header,                    
+#content                      {width: 700px; margin: auto; position: relative; clear: left;}
+h1                            {padding: 0 0 20px 0; font-family: "Gill Sans"; font-weight: bold; text-transform: uppercase; font-size: 40px; color: #333; float: left;}
+h1 a                          {color: inherit; text-decoration: inherit;}
+h1 a:hover                    {color: #fd5000;}
+#notice                       {float: left; padding: 4px 10px; background-color: #333; color: #fff; margin: 10px 14px;}
+#content h1                   {width: 100%; float: left; font-size: 30px; text-transform: none; text-align: center;}
+h2                            {float: left; padding-right: 5px; font-size: 14px; font-family: "Gill Sans"; font-variant: small-caps; color: #333; text-align: center; max-width: 95px;}
+.module h2                    {float: left; padding-right: 5px; font-size: 14px; font-family: "Gill Sans"; font-variant: small-caps; color: #333; text-align: center; max-width: none;}
+h2 a                          {color: #999; text-transform: lowercase !important; text-decoration: none; font-variant: normal;}
+h2 a:hover                    {color: #ad3700;}
+.section                      {padding-left: 5px; float: left; border-left: 1px solid #333; clear: right; width: 494px; margin-bottom: 10px;}
+#character_list               {list-style: none;}
+#character_list a             {color: #FD5000; font-family: "Gill Sans"; text-decoration: none; font-weight: bold;}
+#character_list a:hover       {color: #AD3700;}
+
+#control                      {list-style: none; position: absolute; left: 101%; border-left: 1px solid #333; padding: 10px 0; width: 60px;}
+#control li                   {float: left; width: 100%;}
+#control a                    {display: block; float: left; width: 100%; color: #333; text-decoration: none; padding: 2px; border: 1px solid #fff;}
+#control .active a            {border-color: #333; margin-left: -1px; border-left: none; background-color: #fff;}
+
+
+#newchar                      {list-style: none;}
+#newchar label                {display: block; font-family: "Gill Sans"; font-variant: small-caps; color: #333; margin-right: 5px; font-weight: bold;}
+#newchar input                {border: 1px solid #999; padding: 1px;}
+#newchar input:focus          {border-color: #fd5000;}
+div.submit                    {margin-left: 100px;}   
+/*#stats                        {list-style: none; width: 60px;}
+#stats li                     {width: 100%; float: left;}
+#stats strong                 {float: left;}
+#stats span                   {float: right;}*/
+
+.module                       {width: 46%; float: left; border-top: 1px solid #333; margin: 1%; padding: 1%;}
+.module h2                    {width: 100%; text-align: center; float: none;}
+.module table                 {float: left;}
+.module ul                    {float: left; list-style: none; width: 80%;}
+.module li                    {width: 100%; float:left; position: relative;  padding: 2px 1.2em 2px 3px;}
+.module li strong             {float: left;}
+.module li span               {float: right;}
+.module li .destroy a,
+.module li .increase a,
+.module li .decrease a        {display: none;}
+.module li .weight            {float: right;}
+.module#skills li:hover,
+.module#careers li:hover,
+.module#feats li:hover        {padding-right: 1.2em; border: 1px solid #333; border-left: 0; border-right: 0; padding: 1px 1.2em 1px 3px;}
+.module li:hover .destroy a   {display: block; position: absolute; right: .1em; color: #999; text-decoration: none; font-weight: bold;}
+.module li:hover .increase a,
+.module li:hover .decrease a  {display: block; color: #999; text-decoration: none; font-weight: bold; padding: 0 2px;}
+.module li ul                 {float: right; width: 90%; border-left: 1px solid #888; padding-left: 3%;}
+.module li ul li:hover        {border-color: #fff !important;}
+.module li ul .edit           {text-align: left;}
+.module li ul .edit a         {color: #999; text-decoration: none; font-weight: bold;}
+.module li ul .edit a:hover   {color: #444;}
+.module form                  {width: 100%; float: left; margin-top: -1px;}
+.module form table            {width: 100%; border-top: 1px solid #787878;}
+.module form th               {text-transform: lowercase; font-weight: normal; font-size: 12px; text-align: left; padding: 0 1%;}
+.module form input            {width: 98%; margin: 1%; border: 1px solid #666;}
+.module form .submit input    {width: auto; border: 0; float: left; text-align: left;}
+.module ul form               {width: auto; float: right;}
+.module ul form input         {width: 130px; margin-right: -20px;}
+
+.module h2 a                  {color: #999;}
+.module h2 a:hover            {color: #ad3700;}
+
+#stats table th               {background-color: #333; color: #fff; text-transform: uppercase; padding: 2px 4px; font-weight: bold; font-size: 14px; text-align: center;}
+#stats table td               {padding: 2px 4px; border: 1px solid #333;}
+#stats form table             {border: 0; width: auto;}
+#stats form td input          {border: 0; width: 1.5em; font-family: "Gill Sans"; font-size: 14px;}
+
+#general ul form input,
+#career_edit ul form input    {width: 80px;}
+
+#equipment_list span,
+#feat_list span               {display: block; clear: left; text-align: left; float: right; width: 90%; border-left: 1px solid #888; padding-left: 3%;}
+
+#equipment_list #total_weight {border-top: 1px solid #787878;}
+#total_weight strong          {font-weight: normal;}
+#total_weight span            {clear: none; border: 0; width: auto; font-style: italic;}
+
+hr                            {float: left; width: 100%; visibility: hidden;}
+
+/* Experimental Stuff */
+body                          {border: 0; position: relative;}
+#header                       {background-color: #333; float: left; width: 100%; margin-bottom: 30px;}
+#header .hold                 {width: 700px; margin: auto; position: relative;}
+#header h1                    {color: #fff; padding: 10px;}
+#control                      {position: absolute; right: 0; left: auto; width: auto;}
+#control li                   {float: left; width: auto; padding: 11px 0;}
+#control a                    {padding: 2px 8px; font-size: 16px; border: 0; color: #666; font-weight: normal;}
+#control .active a            {background: none; color: #fff;}
+#control a:hover              {color: #fd5000;}
+
+.module#spells                {width: 96%;}
+.module#spells ul             {width: 25%; float: left;}
+.module#spells ul .title      {font-weight: bold;}
+                            
+/* "Meta" Drop Down       
+                            
+#meta                         {position:absolute;top:0;right:30%; display: none;}
+#meta #metacontent            {display:none;}
+#meta h2                      {display:block;background-color:#333;font-family:Arial;font-size:14px;color:#fff;padding:2px 8px;}
+#meta:hover                   {top:0;left:0;width:100%;background-color:#333; position: absolute;}
+#meta:hover h2                {position:absolute;right:30%;bottom:-18px;}
+#meta:hover #metacontent      {display:block;width:600px;max-width:900px;color:#fff;margin:auto; padding: 40px 0;}
+#metacontent h3               {font-family:Gill Sans,Verdana;font-size:35px;}
+#metacontent h3 span          {font-weight:normal;}
+#metanav                      {list-style:none;float:left;width:100%;}
+#metanav li                   {float:left;}
+#metanav a                    {display:block;float:left;font-family:Arial;font-size:14px;color:#fff;text-decoration:none;padding:3px 8px;border-left:1px solid #fff;}
+#metanav #first a             {border-left:0;}
+#metanav a:hover              {color:#333;background-color:#fff;}
+#meta .col                    {width:45%;margin:5% 5% 0 0;text-align:justify;font-family:Arial;}
+#meta form.col textarea       {width:100%;border:1px solid #222;background-color:#444;color:#fff;}
+#meta form.col textarea:focus {border-color:#000;}*/
+
+#dragon                       {background: url(/images/dragon.png) no-repeat top left; position: absolute; top: -30px; left: -250px; height: 329px; width: 278px;}
+#dragon2                      {background: url(/images/dragon2.png) no-repeat top left; position: absolute; top: -329px; right: 100px; height: 329px; width: 278px;}
+hr.fix                        {float: none; clear: left;}
+
+#footer                       {width: 100%; background-color: #333; color: #fff;font-weight: normal; height: 5em;}
+#footer .hold                 {width: 700px; margin: auto; padding: 5px; text-align: center;}
+#footer a                     {text-decoration: none; color: #999;}
+#footer a:hover               {color: #fd5000;}
+
+html                          {height: 100%;}
+body                          {height: 100%;}
+#nonFooter                    {position: relative; min-height: 100%;}
+* html #nonFooter             {height: 100%;}
+#content                      {padding-bottom: 9em;}
+#footer                       {position: relative; margin-top: -5em;}
+
+#login_form                   {width: 300px; margin: auto; background-color: #333; padding: 25px; color: #fff;}
+#login_form h1                {color: #fff !important;}
+#login_form p                 {width: 100%; float: left; font-size: 20px; margin-bottom: 0.25em;}
+#login_form label             {float: left;}
+#login_form p input           {float: right; border: 1px solid #000; font-size: 20px; width: 200px;}
+
+#login_form input:focus       {background-color: #fd5000;}
+
+#reglink                      {display: block; width: 300px; margin: auto; background-color: #333; padding: 15px 25px; color: #fff; text-decoration: none; margin-top: 20px;}
+#reglink strong               {display: block; font-size: 30px; border-top: 1px solid #fff; padding-top: 5px;}
+#reglink:hover strong         {color: #fd5000;}
+
+#about                        {width: 33em; margin: auto; text-align: justify; text-indent: 2em; line-height: 1.4em;}
+#about p                      {margin-bottom: 1em;}

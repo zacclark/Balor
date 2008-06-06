@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  character: 
+  name: MyString
+  rank: 1
+  base_stat: MyString
+
+two:
+  character: 
+  name: MyString
+  rank: 1
+  base_stat: MyString

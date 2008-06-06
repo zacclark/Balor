@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  character: 
+  name: MyString
+  level: 1
+  hit_die: 1
+  skills_per_level: 1
+  base_save_reflex: 1
+  base_save_will: 1
+  base_save_fortitude: 1
+
+two:
+  character: 
+  name: MyString
+  level: 1
+  hit_die: 1
+  skills_per_level: 1
+  base_save_reflex: 1
+  base_save_will: 1
+  base_save_fortitude: 1

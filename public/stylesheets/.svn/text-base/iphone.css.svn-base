@@ -1,0 +1,9 @@
+#footer .hold,
+#header .hold,
+#content,
+body                {width: 100%; overflow-x: hidden;}
+#dragon,
+#dragon2            {display: none;}
+h2                  {float: none;}
+.module             {width: 90%; clear: left; float: none; margin: auto;}
+#character_list a   {padding: 10px; display: block; background-color: #ddd; margin-bottom: 5px;}

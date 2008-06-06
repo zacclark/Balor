@@ -1,0 +1,9 @@
+body              {border-top: 0;}
+#header,
+#footer,
+#dragon,
+#dragon2,
+#control          {display: none;}
+#content          {width: 95%; margin: auto;}
+#stats th         {border: 1px solid #333;}
+.module           {page-break-inside: avoid;}

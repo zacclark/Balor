@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  quantity: 1
+  description: MyText
+  weight: 1.5
+  character: 
+
+two:
+  name: MyString
+  quantity: 1
+  description: MyText
+  weight: 1.5
+  character: 

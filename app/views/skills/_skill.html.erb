@@ -1,0 +1,15 @@
+<li id="<%= "skill_" + skill.id.to_s %>">
+    <strong><%= skill.name %></strong>
+  <% if params[:action] == 'show' %>
+    <span><%= total_skill(skill.rank,skill.base_stat) %></span>
+  <% elsif params[:action] == 'edit' %>
+    <span id="<%= "skill_" + skill.id.to_s + "_ranks" %>"><%= skill.rank %> ranks, <%= skill.base_stat %></span>
+    <span class="destroy"><%= link_to "X", [@character, skill], :method => :delete, :complete=>visual_effect(:fade, "skill_" + skill.id.to_s, :duration => 0.3) %></span>
+    <span class="decrease">
+      <%= link_to "-", character_skill_path(@character, skill, :skill => {"rank" => skill.rank - 1}), :method => :put %>
+    </span>
+    <span class="increase">
+      <%= link_to "+", character_skill_path(@character, skill, :skill => {"rank" => skill.rank + 1}), :method => :put %>
+    </span>
+  <% end %>
+</li>

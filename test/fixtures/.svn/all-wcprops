@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/balor/!svn/ver/2/branches/test/fixtures
+END
+characters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/balor/!svn/ver/2/branches/test/fixtures/characters.yml
+END
+items.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/test/fixtures/items.yml
+END
+skills.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/balor/!svn/ver/2/branches/test/fixtures/skills.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/test/fixtures/users.yml
+END
+feats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/test/fixtures/feats.yml
+END
+spells.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/balor/!svn/ver/2/branches/test/fixtures/spells.yml
+END
+careers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/balor/!svn/ver/2/branches/test/fixtures/careers.yml
+END
+stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/balor/!svn/ver/2/branches/test/fixtures/stats.yml
+END

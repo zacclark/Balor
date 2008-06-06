@@ -1,0 +1,8 @@
+<h2>Characters <%= link_to "(new)", new_character_path %></h2>
+<div class="section">
+  <ul id="character_list">
+  <% for character in @characters %>
+    <li class="<%= cycle :even, :odd %>"><%= link_to character.name, character %></li>
+  <% end %>
+  </ul>
+</div>

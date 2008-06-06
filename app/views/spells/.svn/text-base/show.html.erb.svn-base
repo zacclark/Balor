@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @spell.name %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @spell.level %>
+</p>
+
+<p>
+  <b>Character:</b>
+  <%=h @spell.character %>
+</p>
+
+
+<%= link_to 'Edit', edit_spell_path(@spell) %> |
+<%= link_to 'Back', spells_path %>

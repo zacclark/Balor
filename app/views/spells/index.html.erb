@@ -1,0 +1,22 @@
+<h1>Listing spells</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Character</th>
+  </tr>
+
+<% for spell in @spells %>
+  <tr>
+    <td><%=h spell.name %></td>
+    <td><%=h spell.level %></td>
+    <td><%=h spell.character %></td>
+    <td><%= link_to 'Show', spell %></td>
+    <td><%= link_to 'Edit', edit_spell_path(spell) %></td>
+    <td><%= link_to 'Destroy', spell, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

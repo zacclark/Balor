@@ -1,0 +1,76 @@
+8
+
+dir
+2
+http://spyyddir.svn.beanstalkapp.com/balor/branches/app/views/characters
+http://spyyddir.svn.beanstalkapp.com/balor
+
+
+
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+
+svn:special svn:externals svn:needs-lock
+
+edit.html.erb
+file
+
+
+
+
+2008-04-21T02:18:53.000000Z
+c9aaee44343acb9bdf91d84d827670cd
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+index.html.erb
+file
+
+
+
+
+2008-02-29T03:53:21.000000Z
+74274ae9ce333cde00a47457667dce06
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+new.html.erb
+file
+
+
+
+
+2008-02-29T02:56:23.000000Z
+f187b704c577ae818aaece18ca5294b5
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+show.html.erb
+file
+
+
+
+
+2008-05-06T00:59:22.000000Z
+74850fdbf17fb39efe179e7beb57b633
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+_controls.html.erb
+file
+
+
+
+
+2008-03-10T17:37:31.000000Z
+f76e1cf4619d0c8e18ddc806fde2210d
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+

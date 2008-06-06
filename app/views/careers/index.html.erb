@@ -1,0 +1,32 @@
+<h1>Listing careers</h1>
+
+<table>
+  <tr>
+    <th>Character</th>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Hit die</th>
+    <th>Skills per level</th>
+    <th>Base save reflex</th>
+    <th>Base save will</th>
+    <th>Base save fortitude</th>
+  </tr>
+
+<% for career in @careers %>
+  <tr>
+    <td><%=h career.character.name %></td>
+    <td><%=h career.name %></td>
+    <td><%=h career.level %></td>
+    <td><%=h career.hit_die %></td>
+    <td><%=h career.skills_per_level %></td>
+    <td><%=h career.base_save_reflex %></td>
+    <td><%=h career.base_save_will %></td>
+    <td><%=h career.base_save_fortitude %></td>
+    <td><%= link_to 'edit', edit_character_career_path(@character, career) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New career', new_character_career_path %>

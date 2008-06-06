@@ -1,0 +1,26 @@
+<h1>New spell</h1>
+
+<%= error_messages_for :spell %>
+
+<% form_for(@spell) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Level</b><br />
+    <%= f.text_field :level %>
+  </p>
+
+  <p>
+    <b>Character</b><br />
+    <%= f.text_field :character %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', spells_path %>

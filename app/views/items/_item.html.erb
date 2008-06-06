@@ -1,0 +1,8 @@
+<li id="<%= "item_" + item.id.to_s %>">
+  <strong><%= h(item.quantity) + "x " if item.quantity > 1 %><%= h(item.name) %></strong>
+  <% if params[:action] == 'edit' %>
+    <span class="destroy"><%= link_to "X", [@character, item], :method => :delete, :complete=>visual_effect(:fade, "item_" + item.id.to_s, :duration => 0.3) %></span>
+  <% end %>
+  <em class="weight"><%= h(item.total_weight) + "lbs" %></em>
+  <span><%= h(item.description) %></span>
+</li>

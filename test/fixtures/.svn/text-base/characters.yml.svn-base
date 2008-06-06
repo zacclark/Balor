@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  race: MyString
+  alignment: MyString
+  description: MyText
+  hit_points: 1
+  armor_bonus: 1
+  deflection_bonus: 1
+  natural_armor: 1
+
+two:
+  name: MyString
+  race: MyString
+  alignment: MyString
+  description: MyText
+  hit_points: 1
+  armor_bonus: 1
+  deflection_bonus: 1
+  natural_armor: 1

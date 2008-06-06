@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/balor/!svn/ver/2/branches/app/controllers
+END
+characters_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/balor/!svn/ver/2/branches/app/controllers/characters_controller.rb
+END
+pages_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/balor/!svn/ver/2/branches/app/controllers/pages_controller.rb
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/balor/!svn/ver/2/branches/app/controllers/application.rb
+END
+items_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/balor/!svn/ver/2/branches/app/controllers/items_controller.rb
+END
+skills_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/balor/!svn/ver/2/branches/app/controllers/skills_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/balor/!svn/ver/2/branches/app/controllers/users_controller.rb
+END
+feats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/balor/!svn/ver/2/branches/app/controllers/feats_controller.rb
+END
+spells_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/balor/!svn/ver/2/branches/app/controllers/spells_controller.rb
+END
+careers_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/balor/!svn/ver/2/branches/app/controllers/careers_controller.rb
+END
+sessions_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/balor/!svn/ver/2/branches/app/controllers/sessions_controller.rb
+END

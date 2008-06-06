@@ -1,0 +1,26 @@
+<h1>New feat</h1>
+
+<%= error_messages_for :feat %>
+
+<% form_for(@feat) do |f| %>
+  <p>
+    <b>Character</b><br />
+    <%= f.text_field :character %>
+  </p>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', feats_path %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Character:</b>
+  <%=h @feat.character %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @feat.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @feat.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_feat_path(@feat) %> |
+<%= link_to 'Back', feats_path %>

@@ -1,0 +1,51 @@
+<h1>New character</h1>
+
+<%= error_messages_for :character %>
+
+<% form_for(@character) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Race</b><br />
+    <%= f.text_field :race %>
+  </p>
+
+  <p>
+    <b>Alignment</b><br />
+    <%= f.text_field :alignment %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Hit points</b><br />
+    <%= f.text_field :hit_points %>
+  </p>
+
+  <p>
+    <b>Armor bonus</b><br />
+    <%= f.text_field :armor_bonus %>
+  </p>
+
+  <p>
+    <b>Deflection bonus</b><br />
+    <%= f.text_field :deflection_bonus %>
+  </p>
+
+  <p>
+    <b>Natural armor</b><br />
+    <%= f.text_field :natural_armor %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', characters_path %>

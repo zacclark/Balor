@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/balor/!svn/ver/2/branches/config/environments
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/balor/!svn/ver/2/branches/config/environments/test.rb
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/balor/!svn/ver/2/branches/config/environments/development.rb
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/balor/!svn/ver/2/branches/config/environments/production.rb
+END

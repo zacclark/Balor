@@ -1,0 +1,88 @@
+8
+
+dir
+2
+http://spyyddir.svn.beanstalkapp.com/balor/branches/app/views/skills
+http://spyyddir.svn.beanstalkapp.com/balor
+
+
+
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+
+svn:special svn:externals svn:needs-lock
+
+_newembed.html.erb
+file
+
+
+
+
+2008-03-13T00:39:27.000000Z
+cc410ed77db3b85ba0b7510e4da22258
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+edit.html.erb
+file
+
+
+
+
+2008-03-13T17:19:17.000000Z
+85179b67538da7b2faa9f21b8c6811c4
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+index.html.erb
+file
+
+
+
+
+2008-03-13T00:05:00.000000Z
+4eb15080bfc39dc16696f01cfbd9814a
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+new.html.erb
+file
+
+
+
+
+2008-03-12T23:58:10.000000Z
+e47eea11cc18b15f333df7875251626f
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+_skill.html.erb
+file
+
+
+
+
+2008-03-13T17:47:24.000000Z
+4d4fc4c34ca7adf93b5d005c514907e5
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
+show.html.erb
+file
+
+
+
+
+2008-03-13T00:03:41.000000Z
+202268e7db8972d243a6c03065bb50e2
+2008-05-28T20:45:21.561983Z
+2
+spyyddir
+
